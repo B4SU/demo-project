@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
        - name: app
-         image: sonal04/addressbook:v1
+         image: sonal04/addressbook:1
 
 ---
 kind: Service
@@ -34,7 +34,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - targetPort: 80
+    - targetPort: 8080
       port: 80
       nodePort: 30001
   selector:
