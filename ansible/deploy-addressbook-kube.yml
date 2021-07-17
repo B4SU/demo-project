@@ -13,4 +13,4 @@
   - name: Get project repo
     git: repo=https://github.com/B4SU/demo-project.git dest=/tmp/demo-project
   - name: Initiate deployment
-    command: chdir=/tmp/demo-project/ansible kubectl apply -f addressbook.yml
+    command: chdir=/tmp/demo-project kubectl apply -f addressbook.yml
