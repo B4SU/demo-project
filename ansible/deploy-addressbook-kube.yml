@@ -1,0 +1,6 @@
+- hosts: kubedev
+  become: true
+  become_user: root
+  tasks:
+  - name: Initiate addressbook deployment
+    command: kubectl apply -f https://raw.githubusercontent.com/B4SU/demo-project/main/addressbook.yml
