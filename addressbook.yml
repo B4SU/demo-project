@@ -24,7 +24,8 @@ spec:
     spec:
       containers:
        - name: app
-         image: sonal04/addressbook:1
+         image: nextcloud:22.0.0-apache
+         #image: sonal04/addressbook:1
 
 ---
 kind: Service
